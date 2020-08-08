@@ -309,7 +309,7 @@ String SendHTML(uint8_t lampstat, uint8_t miststat, uint8_t autostat, int maxtem
     ptr +="<pa>Humi Max SP:";
     ptr +=(int)maxhumsp;
     ptr +="%</pa>\n";
-    ptr +="<pa>Humi Max SP:";
+    ptr +="<pa>Humi Min SP:";
     ptr +=(int)minhumsp;
     ptr +="%</pa>\n";    
     ptr +="<br>";
@@ -329,7 +329,7 @@ String SendHTML(uint8_t lampstat, uint8_t miststat, uint8_t autostat, int maxtem
     ptr += "Humi Max SP:<input type='number' name='setmaxhum'><input type='submit' value='Enter'>\n";
     ptr += "</form>\n";
     ptr += "<form action='http://"+IPaddress+"' method='POST'>\n";
-    ptr += "Humi Max SP:<input type='number' name='setminhum'><input type='submit' value='Enter'>\n";
+    ptr += "Humi Min SP:<input type='number' name='setminhum'><input type='submit' value='Enter'>\n";
     ptr += "</form>\n";
   }
 

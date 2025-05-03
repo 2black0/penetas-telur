@@ -131,6 +131,7 @@ bool toBool(String status){
   } else if (status == "1"){
     return true;
   }
+  return false;
 }
 
 String on_off(bool status){
